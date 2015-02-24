@@ -1,11 +1,0 @@
-﻿DateTime:2013/9/12 20:18:21
-Message:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
-
-Delete from CTS_OPIDK where 1=1  and GHID = @GHID 
-@GHID=1111,Size=4,Type=AnsiString
-DateTime:2013/9/12 20:18:45
-Message:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
-
-select * from CTS_OPIDK where 1=1  and GHID = @GHID  Order by GHID asc 
-@GHID=8600,Size=4,Type=AnsiString
-
