@@ -10,10 +10,9 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Configuration;
 using DP.Data.OracleClient.Mapping;
 using DP.Data.SqlClient.Mapping;
-using DP.Data.Common;
-using System.Configuration;
 namespace VoiceMail.Entity
 {
 	
