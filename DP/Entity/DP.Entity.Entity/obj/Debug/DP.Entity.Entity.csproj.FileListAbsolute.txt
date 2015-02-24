@@ -28,3 +28,4 @@ E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Entity\DP.Entity.Entity\bin\Deb
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Entity\DP.Entity.Entity\obj\Debug\DP.Entity.Entity.csprojResolveAssemblyReference.cache
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Entity\DP.Entity.Entity\obj\Debug\DP.Entity.Entity.dll
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Entity\DP.Entity.Entity\obj\Debug\DP.Entity.Entity.pdb
+E:\董平\工作\工具集\代码\DPNetFx4.Git\DP\Entity\DP.Entity.Entity\bin\Debug\DP.pdb
