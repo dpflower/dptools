@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F37AAB69-5813-4460-A52F-DA66663A8017}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DP</RootNamespace>
+    <AssemblyName>DP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Enyim.Caching, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\NPOI2.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MemcachedProviders, Version=1.2.3102.35179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\MemcachedProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\NPOI2.0\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\Lib\NPOI2.0\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\..\Lib\NPOI2.0\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\..\Lib\NPOI2.0\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Cache\EnyimMemCachedProvider.cs" />
+    <Compile Include="Cache\HttpRuntimeCacheProvider.cs" />
+    <Compile Include="Cache\ICacheStrategy.cs" />
+    <Compile Include="Common\ByteHelper.cs" />
+    <Compile Include="Common\CacheHelper.cs" />
+    <Compile Include="Common\CompressionHelper.cs" />
+    <Compile Include="Common\ConfigurationHelper.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\DataTableHelper.cs" />
+    <Compile Include="Common\DateTimeHelper.cs" />
+    <Compile Include="Common\DictionaryHelper.cs" />
+    <Compile Include="Common\Encrypt.cs" />
+    <Compile Include="Common\Enum.cs" />
+    <Compile Include="Common\EumnHelper.cs" />
+    <Compile Include="Common\FieldDataInfo.cs" />
+    <Compile Include="Common\HashtableHelper.cs" />
+    <Compile Include="Common\IniFile.cs" />
+    <Compile Include="Common\IntHelper.cs" />
+    <Compile Include="Common\ListHelper.cs" />
+    <Compile Include="Common\LogHelper.cs" />
+    <Compile Include="Common\NPOIExcelHelper.cs" />
+    <Compile Include="Common\ProcessHelper.cs" />
+    <Compile Include="Common\ReflectionHelper.cs" />
+    <Compile Include="Common\ShoutDown.cs" />
+    <Compile Include="Common\StringHelper.cs" />
+    <Compile Include="Data\Common\Condition.cs" />
+    <Compile Include="Data\Common\DAL.cs" />
+    <Compile Include="Data\Common\DbColumnSchema.cs" />
+    <Compile Include="Data\Common\DbTableSchema.cs" />
+    <Compile Include="Data\Common\Emit\FuncManager.cs" />
+    <Compile Include="Data\Common\Enum.cs" />
+    <Compile Include="Data\Common\DataRecordExtend.cs" />
+    <Compile Include="Data\Common\ExpressionTree.cs" />
+    <Compile Include="Data\Common\Mapping\ColumnAttribute.cs" />
+    <Compile Include="Data\Common\Mapping\TableAttribute.cs" />
+    <Compile Include="Data\Common\SortOrder.cs" />
+    <Compile Include="Data\Common\Query.cs" />
+    <Compile Include="Data\OleDb\OleDbHelper.cs" />
+    <Compile Include="Data\OracleClient\Mapping\OracleColumnAttribute.cs" />
+    <Compile Include="Data\OracleClient\Mapping\OracleTableAttribute.cs" />
+    <Compile Include="Data\OracleClient\OracleDbColumnSchema.cs" />
+    <Compile Include="Data\OracleClient\OracleDbTableSchema.cs" />
+    <Compile Include="Data\OracleClient\OracleHelper.cs" />
+    <Compile Include="Data\Common\IDbTableSchemaBuilder.cs" />
+    <Compile Include="Data\SqlClient\SqlDbColumnSchemaBuilder.cs" />
+    <Compile Include="Data\SqlClient\Mapping\SqlColumnAttribute.cs" />
+    <Compile Include="Data\SqlClient\Mapping\SqlTableAttribute.cs" />
+    <Compile Include="Data\SqlClient\SqlDbColumnSchema.cs" />
+    <Compile Include="Data\SqlClient\SqlDbTableSchema.cs" />
+    <Compile Include="Data\SqlClient\SqlHelper.cs" />
+    <Compile Include="Data\SqlClient\SqlServerDAL.cs" />
+    <Compile Include="Data\SqlClient\SqlDbTableSchemaBuilder.cs" />
+    <Compile Include="Excel\Excel2003Helper.cs" />
+    <Compile Include="Excel\Excel2007Helper.cs" />
+    <Compile Include="Excel\ExcelHelper.cs" />
+    <Compile Include="Net\AsyncSocket\UserToken\AsyncUserToken.cs" />
+    <Compile Include="Net\AsyncSocket\BufferManager.cs" />
+    <Compile Include="Net\AsyncSocket\DoubleSocketAsyncEventArgs.cs" />
+    <Compile Include="Net\AsyncSocket\Enum\ServerStates.cs" />
+    <Compile Include="Net\AsyncSocket\Eventhandler.cs" />
+    <Compile Include="Net\AsyncSocket\DoubleSocketAsyncEventArgsPool.cs" />
+    <Compile Include="Net\AsyncSocket\UserToken\IAsyncUserToken.cs" />
+    <Compile Include="Net\AsyncSocket\SocketSettings\ISocketSettings.cs" />
+    <Compile Include="Net\AsyncSocket\Packet\DefaultPackStrategy.cs" />
+    <Compile Include="Net\AsyncSocket\Packet\IPackStrategy.cs" />
+    <Compile Include="Net\AsyncSocket\Packet\EmptyPackStrategy.cs" />
+    <Compile Include="Net\AsyncSocket\SocketAsyncEventArgsPool.cs" />
+    <Compile Include="Net\AsyncSocket\SocketSettings\SocketClientSettings.cs" />
+    <Compile Include="Net\AsyncSocket\SocketSettings\SocketServerSettings.cs" />
+    <Compile Include="Net\AsyncSocket\TcpSocketClient.cs" />
+    <Compile Include="Net\AsyncSocket\TcpSocketProxyClient.cs" />
+    <Compile Include="Net\AsyncSocket\TcpSocketServer.cs" />
+    <Compile Include="Net\FTP\FTPAsynchronousConnection.cs" />
+    <Compile Include="Net\FTP\FTPConnection.cs" />
+    <Compile Include="Net\Ping.cs" />
+    <Compile Include="Net\StmpEmail.cs" />
+    <Compile Include="Net\WebRequestHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\UI\ClientInfo.cs" />
+    <Compile Include="Web\UI\Controls\ComboBox.cs" />
+    <Compile Include="Web\UI\Controls\DefaultUrlManager.cs" />
+    <Compile Include="Web\UI\Controls\DesignTime\DesignTimeHtmlTextWriter.cs" />
+    <Compile Include="Web\UI\Controls\FieldDataOptions.cs" />
+    <Compile Include="Web\UI\Controls\MultiGridViewTemplate.cs" />
+    <Compile Include="Web\UI\Controls\MaskTextBox.cs" />
+    <Compile Include="Web\UI\Controls\MaskTextBoxDesigner.cs" />
+    <Compile Include="Web\UI\Controls\MultiDropDown.cs" />
+    <Compile Include="Web\UI\Controls\PagerControl.cs" />
+    <Compile Include="Web\UI\Controls\PagerCssConverter.cs" />
+    <Compile Include="Web\UI\Controls\RepeaterPages.cs" />
+    <Compile Include="Web\UI\Controls\UrlManager.cs" />
+    <Compile Include="Web\UI\Controls\ValidateTextBox.cs" />
+    <Compile Include="Web\UI\Controls\ValidateTextBoxDesigner.cs" />
+    <Compile Include="Web\UI\Controls\WebForm.cs" />
+    <Compile Include="Web\UI\Controls\WebFormField.cs" />
+    <Compile Include="Web\UI\Controls\WebForms.cs" />
+    <Compile Include="Web\UI\Controls\WebForm_Enum.cs" />
+    <Compile Include="Web\UI\Controls\WebForm_Eventhandler.cs" />
+    <Compile Include="Web\UI\Controls\WebGridView.cs" />
+    <Compile Include="Web\UI\DropDownListHelper.cs" />
+    <Compile Include="Web\UI\PageHelper.cs" />
+    <Compile Include="Web\UI\TreeViewHelper.cs" />
+    <Compile Include="XML\Serialization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CSS\GridViewStyle.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CSS\PagerControlStyle.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\Asc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\ComboBoxDropArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\Desc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\JavaScript\ComboBoxUtil.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\JavaScript\JSUtil.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\JavaScript\MaskTextBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\JavaScript\PagerControl.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Net\Response.ContentType.txt" />
+    <EmbeddedResource Include="Resources\Images\Button.gif" />
+    <EmbeddedResource Include="Resources\Images\CloseSearch.gif" />
+    <EmbeddedResource Include="Resources\CSS\MultiDropDown.css" />
+    <EmbeddedResource Include="Resources\JavaScript\MddInitialize.js" />
+    <EmbeddedResource Include="Resources\JavaScript\MddTooltip.js" />
+    <EmbeddedResource Include="Resources\JavaScript\MultiDropDown.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Net\AsyncSocket\Proxy\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\bin\Debug\AsyncSocketClientStudy.exe
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\bin\Debug\AsyncSocketClientStudy.pdb
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\bin\Debug\DP.Web.dll
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\bin\Debug\DP.Web.pdb
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\ResolveAssemblyReference.cache
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\AsyncSocketClientStudy.AsyncSocketClient2.resources
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\AsyncSocketClientStudy.Form1.resources
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\AsyncSocketClientStudy.AsyncSocketClient.resources
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\AsyncSocketClientStudy.Properties.Resources.resources
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\AsyncSocketClientStudy.csproj.GenerateResource.Cache
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\AsyncSocketClientStudy.exe
+F:\董平\工作\工具集\代码\DP\AsyncSocketClientStudy\obj\Debug\AsyncSocketClientStudy.pdb

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ffc74341-f011-4719-8b73-e142d8057a6e" name="dp@DP-PC-N56 2015-02-09 23:20:58" runUser="dp-PC-N56\dp" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="21fc5d89-9aa6-4b8d-942b-50b89e886d9f">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment userDeploymentRoot="E:\董平\工作\工具集\代码\DPNetFx4\DP\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="dp_DP-PC-N56 2015-02-09 23_20_58">
+      <DeploymentItem filename="E:\董平\工作\工具集\代码\DPNetFx4\DP\Lib\Ionic.Zip.dll" />
+      <DeploymentItem filename="E:\董平\工作\工具集\代码\DPNetFx4\DP\Lib\log4net.dll" />
+      <DeploymentItem filename="E:\董平\工作\工具集\代码\DPNetFx4\DP\Test\Core.DP.Test\bin\Debug\NPOI.dll" />
+      <DeploymentItem filename="E:\董平\工作\工具集\代码\DPNetFx4\DP\Lib\Enyim.Caching.dll" />
+      <DeploymentItem filename="E:\董平\工作\工具集\代码\DPNetFx4\DP\Core\DP\bin\Debug\DP.dll" />
+      <DeploymentItem filename="E:\董平\工作\工具集\代码\DPNetFx4\DP\Lib\MemcachedProviders.dll" />
+      <DeploymentItem filename="E:\董平\工作\工具集\代码\DPNetFx4\DP\Entity\DP.Entity.Entity\bin\Debug\DP.Entity.Entity.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-02-09T23:20:58.1811750+08:00" queuing="2015-02-09T23:21:01.7682354+08:00" start="2015-02-09T23:21:01.9665373+08:00" finish="2015-02-09T23:22:58.0312314+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetListTest_User" storage="e:\董平\工作\工具集\代码\dpnetfx4\dp\test\core.dp.test\bin\debug\core.dp.test.dll" id="32a3eac1-2981-d5d6-30d7-a3d2a9c7cc80">
+      <Execution id="8a35569f-bf03-4760-b7fc-ba9abd9fa4b2" />
+      <TestMethod codeBase="E:/董平/工作/工具集/代码/DPNetFx4/DP/Test/Core.DP.Test/bin/Debug/Core.DP.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Core.DP.Test.SqlServerDALTest, Core.DP.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetListTest_User" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="32a3eac1-2981-d5d6-30d7-a3d2a9c7cc80" executionId="8a35569f-bf03-4760-b7fc-ba9abd9fa4b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8a35569f-bf03-4760-b7fc-ba9abd9fa4b2" testId="32a3eac1-2981-d5d6-30d7-a3d2a9c7cc80" testName="GetListTest_User" computerName="DP-PC-N56" duration="00:01:52.8358766" startTime="2015-02-09T23:21:02.2466535+08:00" endTime="2015-02-09T23:22:57.8501356+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a35569f-bf03-4760-b7fc-ba9abd9fa4b2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

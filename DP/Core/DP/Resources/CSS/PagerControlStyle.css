@@ -1,0 +1,113 @@
+﻿/*分页的
+*************************************************************************************************************/
+/* Default
+*******************************************/
+.Pager a{
+	display:block;
+	border:1px solid #ccc;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+}
+
+.Pager input
+{	
+	float:left;
+	padding:2px;
+	margin:2px 2px;
+}
+
+.Pager a.CurrentPage{
+	background:#999;
+	color:#eee;
+}
+
+.Pager span{
+	display:block;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+}
+
+
+/* GreenStyle
+*******************************************/
+.GreenStyle a{
+	display:block;
+	border:1px solid #9cba39;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+	color:#9cba39
+}
+
+.GreenStyle input
+{	
+	float:left;
+	padding:2px;
+	margin:2px 2px;
+}
+
+.GreenStyle a.CurrentPage{
+	background:#C5D985;
+	color:#fff;
+}
+
+.GreenStyle span{
+	display:block;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+}
+
+.GreenStyle span b{
+	color:#C33;
+}
+
+/* BlueStyle
+*******************************************/
+.BlueStyle
+{
+	vertical-align: middle;
+		
+}
+
+.BlueStyle input
+{	
+	float:left;
+	padding:2px;
+	margin:2px 2px;
+}
+
+.BlueStyle a{
+	display:block;
+	border:1px solid #ccc;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+}
+
+.BlueStyle a.CurrentPage{
+	background:#E4F1FA;
+	color:#1E5494;
+}
+
+.BlueStyle span
+{
+	display:block;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+}

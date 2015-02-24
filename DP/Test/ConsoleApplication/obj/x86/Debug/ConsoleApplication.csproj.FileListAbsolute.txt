@@ -1,0 +1,10 @@
+E:\董平\工作\工具集\代码\DPNetFx4\DP\Test\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+E:\董平\工作\工具集\代码\DPNetFx4\DP\Test\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+E:\董平\工作\工具集\代码\DPNetFx4\DP\Test\ConsoleApplication\obj\x86\Debug\ConsoleApplication.exe
+E:\董平\工作\工具集\代码\DPNetFx4\DP\Test\ConsoleApplication\obj\x86\Debug\ConsoleApplication.pdb
+E:\董平\工作\工具集\代码\DPNetFx4\DP\Test\ConsoleApplication\obj\x86\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Test\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Test\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Test\ConsoleApplication\obj\x86\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Test\ConsoleApplication\obj\x86\Debug\ConsoleApplication.exe
+E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Test\ConsoleApplication\obj\x86\Debug\ConsoleApplication.pdb

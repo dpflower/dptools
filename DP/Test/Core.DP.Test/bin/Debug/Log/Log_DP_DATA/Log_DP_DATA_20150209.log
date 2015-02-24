@@ -1,0 +1,460 @@
+﻿DateTime:2015/2/9 23:19:45
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select * from sysobjects where name like '%%' and objectproperty(id, 'IsView') = 1 
+
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Update [CTS_OPIDK] set LOGIN_NAME = @LOGIN_NAME,REAL_NAME = @REAL_NAME,PYM = @PYM,PASS = @PASS,ROLES = @ROLES,LEVELS = @LEVELS,UTYPE = @UTYPE,EXT = @EXT,TEL = @TEL,MOBILENO = @MOBILENO,EMAIL = @EMAIL,ADDR = @ADDR,SEX = @SEX,JOB = @JOB,BIRTH = @BIRTH,EMAIL_UID = @EMAIL_UID,EMAIL_PWD = @EMAIL_PWD,LAST_PWD_DATE = @LAST_PWD_DATE,MEMO = @MEMO where 1=1  and GHID = @GHID 
+@GHID=8601,Size=4,Type=AnsiString
+@LOGIN_NAME=坐席01,Size=6,Type=AnsiString
+@REAL_NAME=坐席01,Size=6,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=5,Size=1,Type=Int16
+@LEVELS=7,Size=1,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:46,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+Insert Into [CTS_OPIDK] (GHID,LOGIN_NAME,REAL_NAME,PYM,PASS,ROLES,LEVELS,UTYPE,EXT,TEL,MOBILENO,EMAIL,ADDR,SEX,JOB,BIRTH,EMAIL_UID,EMAIL_PWD,LAST_PWD_DATE,MEMO) values (@GHID,@LOGIN_NAME,@REAL_NAME,@PYM,@PASS,@ROLES,@LEVELS,@UTYPE,@EXT,@TEL,@MOBILENO,@EMAIL,@ADDR,@SEX,@JOB,@BIRTH,@EMAIL_UID,@EMAIL_PWD,@LAST_PWD_DATE,@MEMO); 
+@GHID=231946186,Size=9,Type=AnsiString
+@LOGIN_NAME=,Size=0,Type=AnsiString
+@REAL_NAME=,Size=0,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=,Size=0,Type=Int16
+@LEVELS=,Size=0,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:46,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select * from sysobjects where name like '%CTS_OPIDK%' and objectproperty(id, 'IsUserTable') = 1 
+
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select OBJECT_NAME(a.id) as TABLE_NAME, a.name as COLUMN_NAME, b.value as COMMENTS, a.* from syscolumns a left join sys.extended_properties b on a.id = b.major_id and a.colid=b.minor_id where a.name like '%GHID%' and a.id = object_id('CTS_OPIDK')  and objectproperty(a.id, 'IsUserTable') = 1 
+
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK (nolock) 
+
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID 
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select DISTINCT GHID from [CTS_OPIDK]   with  (nolock)  where 1=1 
+
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+Insert Into [CTS_OPIDK] (GHID,LOGIN_NAME,REAL_NAME,PYM,PASS,ROLES,LEVELS,UTYPE,EXT,TEL,MOBILENO,EMAIL,ADDR,SEX,JOB,BIRTH,EMAIL_UID,EMAIL_PWD,LAST_PWD_DATE,MEMO) values (@GHID,@LOGIN_NAME,@REAL_NAME,@PYM,@PASS,@ROLES,@LEVELS,@UTYPE,@EXT,@TEL,@MOBILENO,@EMAIL,@ADDR,@SEX,@JOB,@BIRTH,@EMAIL_UID,@EMAIL_PWD,@LAST_PWD_DATE,@MEMO); 
+@GHID=231946504,Size=9,Type=AnsiString
+@LOGIN_NAME=,Size=0,Type=AnsiString
+@REAL_NAME=,Size=0,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=,Size=0,Type=Int16
+@LEVELS=,Size=0,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:46,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+Update [CTS_OPIDK] set LOGIN_NAME = @LOGIN_NAME,REAL_NAME = @REAL_NAME,PYM = @PYM,PASS = @PASS,ROLES = @ROLES,LEVELS = @LEVELS,UTYPE = @UTYPE,EXT = @EXT,TEL = @TEL,MOBILENO = @MOBILENO,EMAIL = @EMAIL,ADDR = @ADDR,SEX = @SEX,JOB = @JOB,BIRTH = @BIRTH,EMAIL_UID = @EMAIL_UID,EMAIL_PWD = @EMAIL_PWD,LAST_PWD_DATE = @LAST_PWD_DATE,MEMO = @MEMO where 1=1  and GHID = @GHID 
+@GHID=8601,Size=4,Type=AnsiString
+@LOGIN_NAME=坐席01,Size=6,Type=AnsiString
+@REAL_NAME=坐席01,Size=6,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=5,Size=1,Type=Int16
+@LEVELS=7,Size=1,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:46,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK  (nolock) 
+
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select DISTINCT GHID from [CTS_OPIDK]   with  (nolock)  where 1=1  and GHID = @GHID
+@GHID=8600,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select * from [CTS_OPIDK]  with  (nolock)   where 1=1  and GHID = @GHID
+@GHID=8600,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID 
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID 
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Update [CTS_OPIDK] set LOGIN_NAME = @LOGIN_NAME,REAL_NAME = @REAL_NAME,PYM = @PYM,PASS = @PASS,ROLES = @ROLES,LEVELS = @LEVELS,UTYPE = @UTYPE,EXT = @EXT,TEL = @TEL,MOBILENO = @MOBILENO,EMAIL = @EMAIL,ADDR = @ADDR,SEX = @SEX,JOB = @JOB,BIRTH = @BIRTH,EMAIL_UID = @EMAIL_UID,EMAIL_PWD = @EMAIL_PWD,LAST_PWD_DATE = @LAST_PWD_DATE,MEMO = @MEMO where 1=1  and GHID = @GHID 
+@GHID=8601,Size=4,Type=AnsiString
+@LOGIN_NAME=坐席01,Size=6,Type=AnsiString
+@REAL_NAME=坐席01,Size=6,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=5,Size=1,Type=Int16
+@LEVELS=7,Size=1,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:46,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID 
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select OBJECT_NAME(a.id) as TABLE_NAME, a.name as COLUMN_NAME, b.value as COMMENTS, a.* from syscolumns a left join sys.extended_properties b on a.id = b.major_id and a.colid=b.minor_id where a.name like '%GHID%' and a.id = object_id('CTS_OPIDK')  and objectproperty(a.id, 'IsUserTable') = 1 
+
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select DISTINCT GHID from [CTS_OPIDK]   with  (nolock)  where 1=1  and GHID = @GHID
+@GHID=8600,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Insert Into [CTS_OPIDK] (GHID,LOGIN_NAME,REAL_NAME,PYM,PASS,ROLES,LEVELS,UTYPE,EXT,TEL,MOBILENO,EMAIL,ADDR,SEX,JOB,BIRTH,EMAIL_UID,EMAIL_PWD,LAST_PWD_DATE,MEMO) values (@GHID,@LOGIN_NAME,@REAL_NAME,@PYM,@PASS,@ROLES,@LEVELS,@UTYPE,@EXT,@TEL,@MOBILENO,@EMAIL,@ADDR,@SEX,@JOB,@BIRTH,@EMAIL_UID,@EMAIL_PWD,@LAST_PWD_DATE,@MEMO); 
+@GHID=231946850,Size=9,Type=AnsiString
+@LOGIN_NAME=,Size=0,Type=AnsiString
+@REAL_NAME=,Size=0,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=,Size=0,Type=Int16
+@LEVELS=,Size=0,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:46,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select * from [CTS_OPIDK]  with  (nolock)   where 1=1  and GHID = @GHID
+@GHID=8600,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:46
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK  (nolock) 
+
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK  (nolock) 
+
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK  (nolock) 
+
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+Update [CTS_OPIDK] set LOGIN_NAME = @LOGIN_NAME,REAL_NAME = @REAL_NAME,PYM = @PYM,PASS = @PASS,ROLES = @ROLES,LEVELS = @LEVELS,UTYPE = @UTYPE,EXT = @EXT,TEL = @TEL,MOBILENO = @MOBILENO,EMAIL = @EMAIL,ADDR = @ADDR,SEX = @SEX,JOB = @JOB,BIRTH = @BIRTH,EMAIL_UID = @EMAIL_UID,EMAIL_PWD = @EMAIL_PWD,LAST_PWD_DATE = @LAST_PWD_DATE,MEMO = @MEMO where 1=1  and GHID = @GHID 
+@GHID=8601,Size=4,Type=AnsiString
+@LOGIN_NAME=坐席01,Size=6,Type=AnsiString
+@REAL_NAME=坐席01,Size=6,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=5,Size=1,Type=Int16
+@LEVELS=7,Size=1,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:47,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK  (nolock) 
+
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select * from [CTS_OPIDK]    with  (nolock) where 1=1  and GHID = @GHID  
+@GHID=8600,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:47
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select * from [CTS_OPIDK]  with  (nolock)   where 1=1  and GHID = @GHID
+@GHID=8600,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Insert Into [CTS_OPIDK] (GHID,LOGIN_NAME,REAL_NAME,PYM,PASS,ROLES,LEVELS,UTYPE,EXT,TEL,MOBILENO,EMAIL,ADDR,SEX,JOB,BIRTH,EMAIL_UID,EMAIL_PWD,LAST_PWD_DATE,MEMO) values (@GHID,@LOGIN_NAME,@REAL_NAME,@PYM,@PASS,@ROLES,@LEVELS,@UTYPE,@EXT,@TEL,@MOBILENO,@EMAIL,@ADDR,@SEX,@JOB,@BIRTH,@EMAIL_UID,@EMAIL_PWD,@LAST_PWD_DATE,@MEMO); 
+@GHID=231947457,Size=9,Type=AnsiString
+@LOGIN_NAME=,Size=0,Type=AnsiString
+@REAL_NAME=,Size=0,Type=AnsiString
+@PYM=,Size=0,Type=AnsiString
+@PASS=,Size=0,Type=AnsiString
+@ROLES=,Size=0,Type=Int16
+@LEVELS=,Size=0,Type=Int32
+@UTYPE=1,Size=1,Type=Int16
+@EXT=,Size=0,Type=AnsiString
+@TEL=,Size=0,Type=AnsiString
+@MOBILENO=,Size=0,Type=AnsiString
+@EMAIL=,Size=0,Type=AnsiString
+@ADDR=,Size=0,Type=AnsiString
+@SEX=,Size=0,Type=AnsiString
+@JOB=,Size=0,Type=AnsiString
+@BIRTH=,Size=0,Type=AnsiString
+@EMAIL_UID=,Size=0,Type=AnsiString
+@EMAIL_PWD=,Size=0,Type=AnsiString
+@LAST_PWD_DATE=2015/2/9 23:19:47,Size=17,Type=DateTime
+@MEMO=,Size=0,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:47
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select * from [CTS_OPIDK]    with  (nolock) where 1=1  and GHID = @GHID and ROLES in (@ROLES) and LEVELS in (@LEVELS0,@LEVELS1,@LEVELS2,@LEVELS3,@LEVELS4,@LEVELS5) and MOBILENO like  '%' + @MOBILENO + '%' and JOB like @JOB+'%'  Order by GHID asc 
+@GHID=8600,Size=4,Type=AnsiString
+@ROLES=1,Size=1,Type=Int32
+@LEVELS0=1,Size=1,Type=Int32
+@LEVELS1=7,Size=1,Type=Int32
+@LEVELS2=6,Size=1,Type=Int32
+@LEVELS3=5,Size=1,Type=Int32
+@LEVELS4=3,Size=1,Type=Int32
+@LEVELS5=2,Size=1,Type=Int32
+@MOBILENO=132,Size=3,Type=AnsiString
+@JOB=工程,Size=4,Type=String
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK  (nolock) 
+
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK 
+
+DateTime:2015/2/9 23:19:47
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select * from [CTS_OPIDK]  with  (nolock)   where 1=1  and GHID = @GHID
+@GHID=8600,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:对象名 'CTS_OPIDK' 无效。
+
+select count(*) from CTS_OPIDK  (nolock) 
+
+DateTime:2015/2/9 23:19:47
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+Delete from [CTS_OPIDK] where 1=1  and GHID = @GHID
+@GHID=1111,Size=4,Type=AnsiString
+DateTime:2015/2/9 23:19:47
+Message:无法打开登录所请求的数据库 "CallThink_sheitc"。登录失败。
+用户 'sa' 登录失败。
+
+select DISTINCT GHID from [CTS_OPIDK]   with  (nolock)  where 1=1 
+
+DateTime:2015/2/9 23:20:12
+Message:ConnectionString 属性尚未初始化。
+
+select * from [User]  with  (nolock)   where 1=1  and LoginName = @LoginName
+@LoginName=admin,Size=5,Type=AnsiString
+

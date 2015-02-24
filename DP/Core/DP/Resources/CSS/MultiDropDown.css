@@ -1,0 +1,47 @@
+﻿/* The default class for the tooltip */
+.mddtooltip {
+	background-color:#FFFFD0;
+	color:#000000;
+	display:block;
+	position:absolute;
+	padding:2px 12px 3px 7px;
+	margin-left:5px;
+	border:1px solid black; 
+}
+
+/* The default class for the textbox */
+.mddtextbox {
+	background-color:#FFFFFF;
+	color:#000000;
+	border:1px solid black; 
+}
+
+/* The default class for the dropdown table */
+.mdddropdown 
+{
+	background-color:#FFFFFF;
+	min-width:180px;
+	max-height:240px;
+	overflow:auto;
+	border:1px solid gray; 
+}
+
+.mdddropdown tr.selected
+{
+	background-color:#D0D0FF;
+	border-top:1px solid gray;
+	width:100%;
+}
+
+.mdddropdown tr.unselected
+{
+	background-color:#FFFFFF;
+	border-top:1px solid gray;
+	width:100%;
+}
+
+.mdddropdown td
+{
+	width:100%;
+	text-align:left
+}

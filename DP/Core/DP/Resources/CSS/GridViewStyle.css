@@ -1,0 +1,104 @@
+﻿.gridview 
+{
+    width: 100%;
+}
+
+/*分页的*************************************************************************************************************/
+.gridview .pager
+{
+    vertical-align: middle;
+}
+.gridview .pager a{
+	display:block;
+	border:1px solid #ccc;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+}
+.gridview .pager input
+{	
+	float:left;
+	padding:2px;
+	margin:2px 2px;
+}
+.gridview .pager a.CurrentPage{
+	background:#E4F1FA;
+	color:#1E5494;
+}
+.gridview .pager span{
+	display:block;
+	float:left;
+	padding:4px 5px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 1px;
+}
+/**************************************************************************************************************/
+
+
+
+/*分页的*************************************************************************************************************/
+.gridview .header th
+{    
+    line-height: 25px;
+	white-space:nowrap;
+}
+
+.gridview .header a 
+{
+	text-decoration:none;
+	color: #3f66cc;
+}
+.gridview .header a:hover
+{
+	text-decoration:none;
+	color: #3f66cc;
+}
+.gridview .header a:link
+{
+	text-decoration:none;
+	color: #3f66cc;
+}
+.gridview .header a:visited
+{
+	text-decoration:none;
+	color: #3f66cc;
+}
+.gridview .header a:active
+{
+	text-decoration:none;
+	color: #3f66cc;
+}
+/********************************************************************************************************************/
+
+.gridview .row
+{
+    
+}
+
+.gridview .selected
+{
+    
+}
+
+.gridview .alternating
+{
+    
+}
+
+.gridview .edit
+{
+    
+}
+
+.gridview .emptyData
+{
+    
+}
+
+.gridview .footer
+{
+    
+}
