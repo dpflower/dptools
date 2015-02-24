@@ -13,7 +13,7 @@ namespace DP.Data.Common
     public class Query
     {
         public Query()
-        {
+        {            
 
         }
 
@@ -67,12 +67,7 @@ namespace DP.Data.Common
         /// 查询条件DB参数
         /// </summary>
         private List<DbParameter> _dbParameters = new List<DbParameter>();
-
-       
-
-      
-
-      
+              
 	    #endregion
 
         #region 属性
@@ -185,6 +180,115 @@ namespace DP.Data.Common
             set { _selectFields = value; }
         } 
         #endregion
+
+        public Query AddCondition(string key, object value, QueryOperator queryOperator)
+        {
+            this._conditions.Add(new Condition(key, value, queryOperator));
+            return this;
+        }
+        public Query AddCondition(string key, short[] values)
+        {
+            this._conditions.Add(new Condition(key, values));
+            return this;
+        }
+        public Query AddCondition(string key, int[] values)
+        {
+            this._conditions.Add(new Condition(key, values));
+            return this;
+        }
+        public Query AddCondition(string key, long[] values)
+        {
+            this._conditions.Add(new Condition(key, values));
+            return this;
+        }
+        public Query AddCondition(string key, string[] values)
+        {
+            this._conditions.Add(new Condition(key, values));
+            return this;
+        }
+
+        public Query ClearConditions()
+        {
+            this._conditions.Clear();
+            return this;
+        }
+
+        /// <summary>
+        /// 设置查询返回字段
+        /// </summary>
+        /// <param name="fields"></param>
+        /// <returns></returns>
+        public Query SetSelectFields(List<string> fields)
+        {
+            this._selectFields = fields;
+            return this;
+        }
+        /// <summary>
+        /// 设置查询返回字段
+        /// </summary>
+        /// <param name="fields"></param>
+        /// <returns></returns>
+        public Query SetSelectFields(string fields)
+        {
+            if (!String.IsNullOrEmpty(fields))
+            {
+                if (!"*".Equals(fields.Trim()))
+                {
+                    this._selectFields = fields.Split(new char[] { ',', ' ', ';' }).ToList();
+                }
+                else
+                {
+                    this._selectFields = new List<string>();
+                }
+            }
+            return this;
+        }
+
+        /// <summary>
+        /// 设置分页信息
+        /// </summary>
+        /// <param name="isPaging"></param>
+        /// <param name="startIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <returns></returns>
+        public Query SetPageInfo(bool isPaging, int startIndex, int pageSize)
+        {
+            this._isPaging = isPaging;
+            this._startRecordIndex = startIndex;
+            this._pageSize = pageSize;
+            return this;
+        }
+
+        /// <summary>
+        /// 设置排序条件
+        /// </summary>
+        /// <param name="orderName"></param>
+        /// <param name="orderDirection"></param>
+        /// <returns></returns>
+        public Query AddSortOrder(string orderName, OrderDirection orderDirection)
+        {
+            this._orders.Add(new SortOrder(orderName, orderDirection));
+            return this;
+        }
+        /// <summary>
+        /// 设置排序条件
+        /// </summary>
+        /// <param name="orderName"></param>
+        /// <returns></returns>
+        public Query AddSortOrder(string orderName)
+        {
+            this._orders.Add(new SortOrder(orderName, OrderDirection.DESC));
+            return this;
+        }
+
+        public Query ClearSortOrders()
+        {
+            this._orders.Clear();
+            return this;
+        }
+
+
+
 
 
 

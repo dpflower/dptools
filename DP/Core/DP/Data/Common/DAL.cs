@@ -32,6 +32,12 @@ namespace DP.Data.Common
         /// </summary>
         protected bool _isDebugLog = false;
 
+        /// <summary>
+        /// 赋值方式
+        /// </summary>
+        protected PopulateMode _populateMode = PopulateMode.Emit;
+
+
 
         #endregion
 
@@ -66,6 +72,16 @@ namespace DP.Data.Common
         {
             get { return _isDebugLog; }
             set { _isDebugLog = value; }
+        }
+
+        /// <summary>
+        /// 赋值方式
+        /// 默认 Emit
+        /// </summary>
+        protected PopulateMode PopulateMode
+        {
+            get { return _populateMode; }
+            set { _populateMode = value; }
         }
 
         #endregion

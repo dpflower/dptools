@@ -41,6 +41,5 @@ E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Core\DP\bin\Debug\NPOI.OOXML.dl
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Core\DP\bin\Debug\NPOI.OpenXml4Net.dll
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Core\DP\bin\Debug\NPOI.OpenXmlFormats.dll
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Core\DP\bin\Debug\NPOI.xml
-E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Core\DP\obj\Debug\DP.csprojResolveAssemblyReference.cache
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Core\DP\obj\Debug\DP.dll
 E:\董平\工作\工具集\代码\DPNetFx4.V2\DP\Core\DP\obj\Debug\DP.pdb

@@ -1319,8 +1319,14 @@ namespace DP.Data.SqlClient
             sqlSelect.Append(_conditionsString);
             using (SqlDataReader dr = _SqlHelper.ExecuteReader(GetConnectionString(dbTableSchema), CommandType.Text, sqlSelect.ToString(), parameters.ToArray()))
             {
-                //_obj = _entityConverter.FirstOrDefault(dr); 
-                _obj = PopulateFromDrByEmitFirstOrDefault<T>(dr);
+                if (_populateMode == PopulateMode.Emit)
+                {
+                    _obj = PopulateFromDrByEmitFirstOrDefault<T>(dr);
+                }
+                else
+                {
+                    _obj = PopulateFromDrFirstOrDefault<T>(dr);
+                }
             }
             base.WriteLog(sqlSelect.ToString(), dtBegin, DateTime.Now);
             return _obj;
@@ -1435,8 +1441,15 @@ namespace DP.Data.SqlClient
 
             using (SqlDataReader dr = _SqlHelper.ExecuteReader(GetConnectionString(dbTableSchema), CommandType.Text, sqlSelect.ToString(), parameters.ToArray()))
             {
-                //list = _entityConverter.Select(dr);
-                list = PopulateFromDrByEmit<T>(dr);
+                //
+                if (_populateMode == PopulateMode.Emit)
+                {
+                    list = PopulateFromDrByEmit<T>(dr);
+                }
+                else
+                {
+                    list = PopulateFromDr<T>(dr);
+                }
             }
 
             base.WriteLog(sqlSelect.ToString(), dtBegin, DateTime.Now);
@@ -2548,50 +2561,50 @@ namespace DP.Data.SqlClient
                 {
                     case QueryOperator.Equal:
                         {
-                            condition.AppendFormat("{0} {1} @{0}", c.Key, "=");
+                            condition.AppendFormat("{0} {1} @{0}_eq", c.Key, "=");
                             param = new SqlParameter();
                             param.SqlDbType = GetSqlDbType(c.Value.GetType());
-                            param.ParameterName = "@" + c.Key;
+                            param.ParameterName = String.Format("@{0}_eq", c.Key);
                             param.Value = c.Value;
                             parameters.Add(param);
                         }
                         break;
                     case QueryOperator.Greater:
                         {
-                            condition.AppendFormat("{0} {1} @{0}", c.Key, ">");
+                            condition.AppendFormat("{0} {1} @{0}_gt", c.Key, ">");
                             param = new SqlParameter();
                             param.SqlDbType = GetSqlDbType(c.Value.GetType());
-                            param.ParameterName = "@" + c.Key;
+                            param.ParameterName = String.Format("@{0}_gt",c.Key);
                             param.Value = c.Value;
                             parameters.Add(param);
                         }
                         break;
                     case QueryOperator.GreaterOrEqual:
                         {
-                            condition.AppendFormat("{0} {1} @{0}", c.Key, ">=");
+                            condition.AppendFormat("{0} {1} @{0}_gteq", c.Key, ">=");
                             param = new SqlParameter();
                             param.SqlDbType = GetSqlDbType(c.Value.GetType());
-                            param.ParameterName = "@" + c.Key;
+                            param.ParameterName = String.Format("@{0}_gteq" , c.Key);
                             param.Value = c.Value;
                             parameters.Add(param);
                         }
                         break;
                     case QueryOperator.Less:
                         {
-                            condition.AppendFormat("{0} {1} @{0}", c.Key, "<");
+                            condition.AppendFormat("{0} {1} @{0}_lt", c.Key, "<");
                             param = new SqlParameter();
                             param.SqlDbType = GetSqlDbType(c.Value.GetType());
-                            param.ParameterName = "@" + c.Key;
+                            param.ParameterName = String.Format("@{0}_lt", c.Key);
                             param.Value = c.Value;
                             parameters.Add(param);
                         }
                         break;
                     case QueryOperator.LessOrEqual:
                         {
-                            condition.AppendFormat("{0} {1} @{0}", c.Key, "<=");
+                            condition.AppendFormat("{0} {1} @{0}_lteq", c.Key, "<=");
                             param = new SqlParameter();
                             param.SqlDbType = GetSqlDbType(c.Value.GetType());
-                            param.ParameterName = "@" + c.Key;
+                            param.ParameterName = String.Format("@{0}_lteq", c.Key);
                             param.Value = c.Value;
                             parameters.Add(param);
                         }
@@ -2618,10 +2631,10 @@ namespace DP.Data.SqlClient
                         break;
                     case QueryOperator.NotEqual:
                         {
-                            condition.AppendFormat("{0} {1} @{0}", c.Key, "<>");
+                            condition.AppendFormat("{0} {1} @{0}_noteq", c.Key, "<>");
                             param = new SqlParameter();
                             param.SqlDbType = GetSqlDbType(c.Value.GetType());
-                            param.ParameterName = "@" + c.Key;
+                            param.ParameterName = String.Format("@{0}_noteq", c.Key);
                             param.Value = c.Value;
                             parameters.Add(param);
                         }

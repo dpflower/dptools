@@ -53,5 +53,11 @@ namespace DP.Data.Common
         DESC = 1
     }
 
+    public enum PopulateMode
+    {
+        Emit = 0,
+        Reflection = 1
+    }
+
 
 }
